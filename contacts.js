@@ -2,7 +2,7 @@ const { v4 } = require("uuid");
 const fs = require("fs").promises;
 const path = require("path");
 
-const contactsPath = path.resolve("db/contacts.json");
+const contactsPath = path.resolve("./db/contacts.json");
 
 /*
  * Раскомментируй и запиши значение
@@ -11,6 +11,7 @@ const contactsPath = path.resolve("db/contacts.json");
 // // TODO: задокументировать каждую функцию
 async function listContacts() {
   const data = await fs.readFile(contactsPath);
+
   const contacts = JSON.parse(data);
   return contacts;
 }
