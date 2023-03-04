@@ -9,11 +9,12 @@ const contactsPath = path.join("db", "contacts.json");
  */
 
 // // TODO: задокументировать каждую функцию
+
 const listContacts = async () => {
   try {
     const data = await fs.readFile(contactsPath, "utf-8");
     const contacts = JSON.parse(data);
-    // console.table(contacts);
+
     return contacts;
   } catch (error) {
     console.log(error.message);

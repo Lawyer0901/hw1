@@ -11,29 +11,22 @@ const {
 } = require("./contacts");
 
 // // TODO: рефакторить
-function invokeAction({ action, id, name, email, phone }) {
+async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      listContacts();
-      console.log(contacts);
+      console.table(await listContacts());
       break;
 
     case "get":
-      getContactById(id);
-      if (!contactById) {
-        throw new Error(`Contact with id ${id} is not exist`);
-      }
-      console.log(contactById);
+      console.log(await getContactById(id));
       break;
 
     case "add":
-      addContact(name, email, phone);
-      console.log(newContact);
+      console.log(await addContact(name, email, phone));
       break;
 
     case "remove":
-      removeContact(id);
-      console.log(removedContact);
+      console.log(await removeContact(id));
       break;
 
     default:
