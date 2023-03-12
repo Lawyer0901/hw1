@@ -43,7 +43,7 @@ const removeContact = async (contactId) => {
     );
     await fs.writeFile(contactsPath, JSON.stringify(filtredContact));
 
-    return contacts;
+    return filtredContact;
   } catch (error) {
     console.log(error.message);
   }
@@ -57,7 +57,7 @@ const addContact = async (name, email, phone) => {
 
     await fs.writeFile(contactsPath, JSON.stringify(newContact), "utf-8");
 
-    return contacts;
+    return newContact;
   } catch (error) {
     console.log(error.message);
   }

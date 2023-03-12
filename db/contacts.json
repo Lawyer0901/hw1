@@ -1,1 +1,36 @@
-[{"name":"Ajax","email":"ajax@mail.com","phone":"+666","id":0},{"name":"Kiwi","email":"kiwi@mail.com","phone":"+666","id":1},{"name":"Tomato","email":"tomato@mail.com","phone":"+666","id":2},{"name":"Superuser","email":"super@mail.com","phone":"+666","id":5},{"name":"Mango","email":"mango@gmail.com","phone":"322-22-22","id":6},{"name":"Mango","email":"mango@gmail.com","phone":"322-22-22","id":7},{"id":"3f48fda0-638f-4298-99c3-bbc70dbd1823","name":"Mango","email":"mango@gmail.com","phone":"322-22-22"}]
+[
+  { "name": "Ajax", "email": "ajax@mail.com", "phone": "+666", "id": 0 },
+  { "name": "Kiwi", "email": "kiwi@mail.com", "phone": "+666", "id": 1 },
+  { "name": "Tomato", "email": "tomato@mail.com", "phone": "+666", "id": 2 },
+  { "name": "Superuser", "email": "super@mail.com", "phone": "+666", "id": 5 },
+  {
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22",
+    "id": 6
+  },
+  {
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22",
+    "id": 7
+  },
+  {
+    "id": "3f48fda0-638f-4298-99c3-bbc70dbd1823",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22"
+  },
+  {
+    "id": "4f904fe2-66e4-42c6-b2e4-48ef666b94db",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22"
+  },
+  {
+    "id": "cae001ec-ff14-4f09-a740-f828a051d839",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22"
+  }
+]
